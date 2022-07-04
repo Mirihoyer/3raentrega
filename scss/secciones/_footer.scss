@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(100, 83, 83);
+    font-family: 'lato';
+    padding: 5px;
+    color: white;
+
+    .contacto {
+       p {
+        margin: 0;
+    } 
+    }
+    
+}
+
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 15%;
+img {
+    height: 30px;
+}
+}
+
+
+.info {
+    align-content: center;
+    padding-top: 20px;
+    font-style: italic;
+}

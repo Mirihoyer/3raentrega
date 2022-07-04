@@ -1,0 +1,77 @@
+
+.grilla2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.4fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "servicio1 servicio2 servicio3"
+        "servicio4 servicio5 servicio6";
+        min-height: 80vh;
+}
+
+.titulo {
+    display: flex;
+    grid-area: titulo;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    font-family: 'lato';
+}
+
+.servicio1 {
+    grid-area: servicio1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px 20px 30px;
+    text-align: center;
+
+}
+
+.servicio2 {
+    grid-area: servicio2;
+    @extend .servicio1;
+    padding: 30px 15px 20px 15px;
+}
+
+.servicio3 {
+    grid-area: servicio3;
+    @extend .servicio1;
+    padding: 30px 30px 20px 15px;
+   
+}
+
+.servicio4 {
+    grid-area: servicio4;
+    @extend .servicio1;
+     
+}
+
+.servicio5 {
+    grid-area: servicio5;
+    @extend .servicio2;
+     
+}
+
+.servicio6 {
+    grid-area: servicio6;
+    @extend .servicio3;
+     
+}
+
+
+.servicioicon {
+    color: #84a98c;
+    margin: 1rem;
+    font-size: 4rem;
+
+}
+
+.parrafoservicios {
+    margin: 0 20% 0 20%;
+}
+

@@ -1,0 +1,86 @@
+.imgnosotros {
+    width: auto;
+    height: 50vh;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.7fr 0.3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "section1 section2"
+        "opiniones opiniones"
+        "section3 section4";
+}
+
+.section1 {
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+    font-family: 'lato';
+    align-items: center;
+
+    img {
+        border-radius: 5px;
+    }
+}
+
+.section2 {
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    font-family: 'lato';
+    text-align: center;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 2em;
+    }
+}
+
+.opiniones {
+    grid-area: opiniones;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    font-size: 1.5em;
+    background-color: $colorFondo;
+}
+
+.section3 {
+
+    grid-area: section3;
+    background-color: $colorFondo;
+    padding: 30px;
+    text-align: center;
+
+
+    p {
+        background-color: $colorSecundario;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px;
+    }
+
+    .icon {
+        padding: 30px;
+
+    }
+}
+
+.section4 {
+    grid-area: section4;
+    @extend .section3;
+   
+}

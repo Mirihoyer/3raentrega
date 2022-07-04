@@ -1,0 +1,255 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ol {
+  list-style-type: none; }
+
+ul {
+  list-style-type: none; }
+
+.logo {
+  width: 220px;
+  height: 80px; }
+
+.header {
+  font-family: 'lato'; }
+
+.carousel-caption {
+  position: absolute;
+  top: 20px; }
+
+.responsivetextos {
+  display: none; }
+
+.imgnosotros {
+  width: auto;
+  height: 50vh; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.7fr 0.3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "section1 section2" "opiniones opiniones" "section3 section4"; }
+
+.section1 {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 40px;
+  font-family: 'lato';
+  align-items: center; }
+  .section1 img {
+    border-radius: 5px; }
+
+.section2 {
+  grid-area: section2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  font-family: 'lato';
+  text-align: center; }
+  .section2 h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 2em; }
+
+.opiniones {
+  grid-area: opiniones;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+  font-size: 1.5em;
+  background-color: #cfcfcf; }
+
+.section3, .section4 {
+  grid-area: section3;
+  background-color: #cfcfcf;
+  padding: 30px;
+  text-align: center; }
+  .section3 p, .section4 p {
+    background-color: #e8e8e8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px; }
+  .section3 .icon, .section4 .icon {
+    padding: 30px; }
+
+.section4 {
+  grid-area: section4; }
+
+.grilla2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.4fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo titulo titulo" "servicio1 servicio2 servicio3" "servicio4 servicio5 servicio6";
+  min-height: 80vh; }
+
+.titulo {
+  display: flex;
+  grid-area: titulo;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  font-family: 'lato'; }
+
+.servicio1, .servicio2, .servicio5, .servicio3, .servicio6, .servicio4 {
+  grid-area: servicio1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px 20px 30px;
+  text-align: center; }
+
+.servicio2, .servicio5 {
+  grid-area: servicio2;
+  padding: 30px 15px 20px 15px; }
+
+.servicio3, .servicio6 {
+  grid-area: servicio3;
+  padding: 30px 30px 20px 15px; }
+
+.servicio4 {
+  grid-area: servicio4; }
+
+.servicio5 {
+  grid-area: servicio5; }
+
+.servicio6 {
+  grid-area: servicio6; }
+
+.servicioicon {
+  color: #84a98c;
+  margin: 1rem;
+  font-size: 4rem; }
+
+.parrafoservicios {
+  margin: 0 20% 0 20%; }
+
+.galeria img {
+  width: 100%;
+  transition: all 300ms;
+  position: relative; }
+  .galeria img:hover {
+    transform: scale(1.1); }
+
+.row {
+  display: flex;
+  padding: 10px; }
+
+.column {
+  flex: 25%;
+  padding: 10px; }
+  .column img {
+    margin-top: 10px; }
+
+.googlemaps {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'lato'; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  background-color: #645353;
+  font-family: 'lato';
+  padding: 5px;
+  color: white; }
+  .footer .contacto p {
+    margin: 0; }
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 15%; }
+  .redes img {
+    height: 30px; }
+
+.info {
+  align-content: center;
+  padding-top: 20px;
+  font-style: italic; }
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%; }
+  /* Diseño responsive footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    align-content: center; }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .responsivetextos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #cfcfcf; }
+    .responsivetextos p {
+      align-items: center; } }
+
+/* Diseño responsive para dispositivos pequeños*/
+@media (max-width: 415px) {
+  .logo {
+    width: 100px;
+    height: 40px; }
+  /* Diseño responsive nosotros */
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "section1 section1" "section2 section2" "opiniones opiniones" "section3 section3" "section4 section4"; }
+  /* Diseño responsive servicios */
+  .titulosection2 {
+    align-items: center;
+    align-content: center; }
+  .grilla2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.4fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "titulo titulo titulo" "servicio1 servicio1 servicio1" "servicio2 servicio2 servicio2" "servicio3 servicio3 servicio3" "servicio4 servicio4 servicio4" "servicio5 servicio5 servicio5" "servicio6 servicio6 servicio6"; }
+  /* Diseño responsive galeria */
+  .imgresponsive {
+    max-width: 390px;
+    padding-left: 30px; }
+  .column {
+    flex: 100%; }
+  /* Diseño responsive footer */
+  .footer {
+    flex-direction: column;
+    align-content: center; }
+    .footer .redes {
+      display: none; }
+  .imgnosotros {
+    width: 100%;
+    height: auto; } }
