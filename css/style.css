@@ -193,6 +193,20 @@ ul {
   padding-top: 20px;
   font-style: italic; }
 
+@media (max-width: 1300px) {
+  .responsivetextos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 50vh;
+    padding-top: 70px;
+    background-color: #cfcfcf; }
+    .responsivetextos p {
+      padding: 20px;
+      align-items: center;
+      text-align: center; } }
+
 @media (max-width: 600px) {
   .column {
     flex: 100%; }
@@ -204,16 +218,7 @@ ul {
   .redes {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; }
-  .responsivetextos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    background-color: #cfcfcf; }
-    .responsivetextos p {
-      align-items: center; } }
+    flex-wrap: nowrap; } }
 
 /* Diseño responsive para dispositivos pequeños*/
 @media (max-width: 415px) {
